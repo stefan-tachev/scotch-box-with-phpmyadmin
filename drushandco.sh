@@ -6,5 +6,5 @@ drush init -y;
 echo "Europe/Berlin" | sudo tee /etc/timezone;
 sudo dpkg-reconfigure --frontend noninteractive tzdata;
 composer self-update
-
+sudo apt-get install fontforge ttfautohint
 
