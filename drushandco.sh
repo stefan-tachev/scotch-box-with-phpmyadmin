@@ -1,13 +1,15 @@
 wget http://files.drush.org/drush.phar;
 php drush.phar core-status;
 chmod +x drush.phar;
-sudo mv drush.phar /usr/local/bin/drush;
+mv drush.phar /usr/local/bin/drush;
 drush init -y;
 echo "Europe/Berlin" | sudo tee /etc/timezone;
-sudo dpkg-reconfigure --frontend noninteractive tzdata;
-sudo apt-get update
+dpkg-reconfigure --frontend noninteractive tzdata;
+apt-get update
 composer self-update
-sudo apt-get install -y fontforge ttfautohint
-sudo npm install --quiet -g casperjs
-sudo npm install --quiet -g phantomjs
-sudo npm install --quiet -g wraith
+cd /var
+chown -r vagrant:vagrant www
+apt-get install -y fontforge ttfautohint
+npm install --quiet -g casperjs
+npm install --quiet -g phantomjs
+gem install wraith
