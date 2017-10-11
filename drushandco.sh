@@ -7,7 +7,7 @@ echo "Europe/Berlin" | sudo tee /etc/timezone;
 sudo dpkg-reconfigure --frontend noninteractive tzdata;
 sudo apt-get update
 composer self-update
-sudo apt-get install fontforge ttfautohint
+sudo apt-get install -y fontforge ttfautohint
 sudo npm install --quiet -g casperjs
 sudo npm install --quiet -g phantomjs
 sudo npm install --quiet -g wraith
