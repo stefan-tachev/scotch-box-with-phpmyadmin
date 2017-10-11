@@ -12,4 +12,4 @@ chown -r vagrant:vagrant www
 apt-get install -y fontforge ttfautohint
 npm install --quiet -g casperjs
 npm install --quiet -g phantomjs
-gem install wraith
+/home/vagrant/.rbenv/shims/gem install wraith
